@@ -6,12 +6,12 @@ const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('')
 
     const handleInputChange = (event) => {
-        setInputValue(event.target.value)
+        setInputValue(event.target.value);
     }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if(inputValue.trim()) {
+        if(inputValue.trim().length > 2) {
             setCategories(inputValue);
             setInputValue('');
         }        

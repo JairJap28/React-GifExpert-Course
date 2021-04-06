@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <GifGridItem> Should show the text correctly 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="A Title"
+    className="img__normal"
+    src="https://localhost/image.png"
+  />
+  <img
+    alt="blur A Title"
+    className="img__blur"
+    src="https://localhost/image.png"
+  />
+  <p>
+    A Title
+  </p>
+</div>
+`;

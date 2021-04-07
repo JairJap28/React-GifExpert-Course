@@ -4,8 +4,8 @@ import AddCategory from './components/AddCategory';
 import EmptySearch from './components/GifEmptySearch';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
-    const [categories, setCategories] = useState([]);
+const GifExpertApp = ({ defaultCategories = [] }) => {
+    const [categories, setCategories] = useState(defaultCategories);
 
     const handleAdd = (value) => {
         setCategories([value, ...categories]);
